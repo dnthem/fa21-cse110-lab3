@@ -108,16 +108,87 @@
             <div class="other-notes">
                 <h3>resources:</h3>
                 <nav>
-                    <a href="#">Previous metting</a>
-                    <a href="#">Contacts</a>
+                    <a href="#">Previous metting</a> |
+                    <a href="#">Contacts</a> |
                     <a href="#">Infomation</a>
                 </nav>
                 
 
             </div>
 
-            <div class="myForm">
+            <hr>
 
+            <div class="myForm">
+                <form>
+                    <fieldset>
+                        <legend>Your Infomation:</legend>
+
+                        <label>Name:</label>
+                        <input type="text" id="Name" name="user_name">
+
+                        <label>PID:</label>
+                        <input type="text" id="PID" name="user_PID">
+
+                        <label>Email:</label>
+                        <input type="email" id="Email" name="user_email">
+
+                        <br><br>
+
+                        <label">Select College:</label>
+                        <input list="collegelist" name="college-list" id="college-list">
+
+                            <datalist id="collegelist">
+                            <option value="Revelle">
+                            <option value="John Muir">
+                            <option value="Thurgood Marshall">
+                            <option value="Earl Warren">
+                            <option value="Eleanor Roosevelt">
+                            <option value="Sixth">
+                            <option value="Seventh">
+                            </datalist>
+
+                         <br><br>
+                        <label>How many classes are you taking?</label>
+                        <select name="classes" id="user_classes">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">more than 5</option>
+                          </select>
+                         <br><br>
+
+
+                         Distance from school:
+                        <input type="radio" id="0-5" name="05" value="0-5 miles">
+                        <label for="0-5">0-5 miles</label>
+                        <input type="radio" id="6-10" name="610" value="6-10 miles">
+                        <label for="6-10">6-10 miles</label>
+                        <input type="radio" id="10" name="10" value="10+ miles">
+                        <label for="10">10+ miles</label>
+
+                        <br><br>
+                         Optional:
+                         <input type="checkbox" id="txt_msg">
+                         <label for="txt_msg">recieve text message</label>
+                         <input type="checkbox" id="email_msg">
+                         <label for="email_msg">recieve email message</label>
+                         <input type="checkbox" id="mail_msg">
+                         <label for="mail_msg">recieve mail message</label>
+
+                         <br><br>
+                         <label for="user_date">Date</label>
+                         <input type="date" id="user_date">
+
+                         <br><br>
+                         <label for="user_comment">Comment</label><br>
+                         <textarea id="user_comment" name="comment"  rows="5" cols="50"></textarea>
+                         
+                         <br><br>
+                         <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </div>
         </footer>
     </body>

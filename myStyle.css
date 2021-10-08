@@ -1,13 +1,15 @@
-* {
-    background-color: steelblue;
-}
-
 @font-face {
     font-family: RobotoCondensed;
     src: url("RobotoCondensed-Light.tff");
 }
 
+* {
+    font-family: RobotoCondensed;
+}
 
+body {
+    background-color: white;
+}
 
 
 /* -------------------- header --------------------*/

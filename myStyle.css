@@ -1,0 +1,30 @@
+* {
+    background-color: steelblue;
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("RobotoCondensed-Light.tff");
+}
+
+
+
+
+/* -------------------- header --------------------*/
+
+header {
+    height:auto;
+    width: auto;
+}
+
+#titile-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*---------------------- main ----------------------*/
+
+
+/*---------------------- footer --------------------*/

@@ -37,12 +37,15 @@ header h1{
 /*---------------------- main ----------------------*/
 
 .Subtitle h2 {
-    font-size: 4ex;
+    font-size: 2em;
     border-left-style: solid;
     border-left-color: #0e81ea;
     border-left-width: 1ex;
     background-color: hsl(167, 100%, 95%);
-
+}
+.Subtitle  h2 span{
+    font-size: 1ex;
+    padding-right: 3em;
 }
 
 .date-time-room{
@@ -68,6 +71,11 @@ header h1{
     border-left-width: 0.5ex;
     background-color: hsl(167, 100%, 95%);
 }
+
+[class|=grid] h3{
+    text-transform: uppercase;
+}
+
 /* --------------- for screen larger than 1000px ----------*/
 @media only screen and (min-width: 1000px) {
     .container_atd_agd{
@@ -171,8 +179,18 @@ header h1{
     color:green;
 }
 
+.point1 + div{
+    padding-left: 20px;
+}
 
+.Conclusion details summary:active{
+    color:lightblue;
+    text-decoration: underline;
+}
 
+p.point2{
+    color:red;
+}
 
 /*---------------------- footer --------------------*/
 

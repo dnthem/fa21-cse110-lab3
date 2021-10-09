@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: RobotoCondensed;
     src: url("RobotoCondensed-Light.tff");
@@ -5,28 +7,173 @@
 
 * {
     font-family: RobotoCondensed;
+
+}
+h1, h2, h3 {
+    text-decoration: underline;
 }
 
 body {
     background-color: white;
+    
 }
 
 
 /* -------------------- header --------------------*/
-
-header {
-    height:auto;
-    width: auto;
+header, main, footer {
+    position: relative;
 }
 
-#titile-image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+header h1{
+    font-size: 5ex;
+    border: 3px solid #73AD21;
+    text-align: center;
+    color: white;
+    background-color: rgb(84, 139, 184);
 }
+
 
 
 /*---------------------- main ----------------------*/
 
+.Subtitle h2 {
+    font-size: 4ex;
+    border-left-style: solid;
+    border-left-color: #0e81ea;
+    border-left-width: 1ex;
+    background-color: hsl(167, 100%, 95%);
+
+}
+
+.date-time-room{
+    border-style: solid;
+    border-color: blue;
+    margin-left:1cm;
+    text-align: left;
+    padding-bottom: 1em;
+
+}
+
+.container_atd_agd ~ h2 , .Conclusion h2 {
+    border-left-style: solid;
+    border-left-color: #0e81ea;
+    border-left-width: 0.5ex;
+    background-color: hsl(167, 100%, 95%);
+}
+
+.atd_agd h2{
+    border-radius:10px;
+    border-left-style: solid;
+    border-left-color: #0e81ea;
+    border-left-width: 0.5ex;
+    background-color: hsl(167, 100%, 95%);
+}
+/* --------------- for screen larger than 1000px ----------*/
+@media only screen and (min-width: 1000px) {
+    .container_atd_agd{
+        display: flex;
+        
+    }
+    
+
+    
+    .atd_agd{
+        padding-left: 20px;
+        flex-basis: 720px;
+        background: white;
+    
+    }
+    
+
+
+    .grid-container{
+        display:grid;
+        grid-gap: 10px;
+        
+        padding: 10px;
+      }
+      
+      .grid-item{
+       
+        padding: 10px;
+      }
+      
+      .item1 {
+        grid-column: 1 / span 1.5;
+        grid-row: 1;
+      }
+      
+      .item2 {
+        grid-column: 2 / span 1.5;
+        grid-row: 1;
+      }
+      
+      .item3{
+       grid-column: 2 / span 1.5;
+        grid-row: 2;
+      }
+}
+
+/* --------------- for screen smaller than 1000px ----------*/
+@media only screen and (max-width:999px){
+    .grid-container{
+        display:grid;
+        grid-gap: 10px;
+        
+        padding: 10px;
+      }
+      
+      .grid-item{
+        border: solid navajowhite;
+        padding: 10px;
+      }
+      
+      .item1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+      }
+      
+      .item2 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+      }
+      
+      .item3{
+       grid-column: 1 / span 1;
+        grid-row: 3;
+      }
+}
+
+
+#intro-1 > p {
+    border: solid;
+    padding: 10px;
+}
+
+.other-notes > nav{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(167, 100%, 95%);;
+}
+
+.other-notes > nav > div{
+
+    background-color: #f1f1f1;
+    margin: 10px 20px 10px 20px;
+    padding: 20px;
+}
+
+.other-notes > nav > div:hover{
+    background-color: hsl(167, 100%, 95%);
+    color: pink;
+}
+.other-notes > nav > div > a:active{
+    color:green;
+}
+
+
+
 
 /*---------------------- footer --------------------*/
+
+}
